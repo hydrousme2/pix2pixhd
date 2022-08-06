@@ -1,4 +1,4 @@
-# This is a Pytoch implementation of Pix2PixHD as proposed in [High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs](https://arxiv.org/abs/1711.11585) (Wang et al. 2018)
+# This is a Pytorch implementation of Pix2PixHD as proposed in [High-Resolution Image Synthesis and Semantic Manipulation with Conditional GANs](https://arxiv.org/abs/1711.11585) (Wang et al. 2018)
 
 # Architecture is as follows:
 ## 1. Generator
@@ -6,7 +6,9 @@ The Pix2PixHD generator is comprised of two separate subcomponent generators: $G
 
 The architecture for each network comprised of
 
-<strong> G = [$G^{(F)}$, $G^{(R)}$, $G^{(B)}$], </strong>
+$$\begin{align*}
+    G = \left[G^{(F)}, G^{(R)}, G^{(B)}\right],
+\end{align*}$$
 
 where $G^{(F)}$ is a frontend of convolutional blocks (downsampling), $G^{(R)}$ is a set of residual blocks, and $G^{(B)}$ is a backend of transposed convolutional blocks (upsampling).
 
