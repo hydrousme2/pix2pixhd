@@ -1,5 +1,5 @@
 import torch
-from tqdm.notebook import tqdm 
+from tqdm import tqdm 
 
 from .config import epochs
 from .utils import save_checkpoint, show_tensor_images

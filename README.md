@@ -63,3 +63,10 @@ $$\begin{align*}
 \end{align*}$$
 
 where $\lambda_1 = \lambda_2 = 10$.
+
+# Hyper-Parameters
+<li>Number of classes in dataset: 35 </li>
+<li>learning rate: 0.0002 for 100 epoch and decays linearly to 0 for next 100 epoch. Takes around 1:15 hrs per epoch on kaggle notebook with gpu</li>
+<li>Optimizer: Adam with betas (0.5, 0.999) </li>
+<li>Weights initialization: Gaussian init with 0 mean and 0.02 std (standard DCGAN init) </li>
+<li>batch size: 1 </li>
